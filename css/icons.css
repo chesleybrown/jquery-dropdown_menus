@@ -1,0 +1,31 @@
+/*
+ * Icons
+ */
+.icon {
+	background: no-repeat left center;
+	display: block;
+	width: auto;
+	min-width: 16px;
+	height: 16px;
+	line-height: 16px;
+	white-space: nowrap;
+	text-indent: 20px;
+}
+input.icon {
+	text-align: left;
+	width: auto;
+	overflow: visible;
+	height: auto;
+	border: none;
+	cursor: pointer;
+	color: #333;
+	font-weight: bold;
+}
+
+/* Security */
+.icon_personal {
+	background-image: url(../img/icons/fugue/lock.png);
+}
+.icon_shared {
+	background-image: url(../img/icons/fugue/hand-share.png);
+}

@@ -1,0 +1,200 @@
+/* Dropdown Menu */
+.menu {
+	opacity: 0.5;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 100;
+}
+.menu.hover,
+.menu:hover {
+	opacity: 1;
+}
+.menu ul.menu_headers {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 16px;
+}
+.menu ul.menu_headers li.menu_header {
+	margin: 0;
+	padding: 0;
+	float: right;
+	width: 32px;
+	height: 16px;
+	background: url(../img/menu/dropdown_button.png) no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top: 1px;
+	right: 0;
+}
+.menu ul.menu_headers li.menu_header:hover {
+	background-position: 0 -16px
+}
+.menu ul.menu_items {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 3px 0;
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+	border-color: #999;
+	overflow: hidden;
+	clear: both;
+	float: left;
+	background: #fff;
+	-moz-box-shadow: 0 5px 5px #aaa;
+	-webkit-box-shadow: 0 5px 5px #aaa;
+}
+.menu ul.menu_items li.menu_item {
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+.menu ul.menu_items li.menu_item .icon {
+	float: left;
+	margin: 3px 10px 0 0;
+}
+.menu ul.menu_items li.menu_item a {
+	color: #666;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 7px 15px;
+	display: block;
+	text-shadow: 1px 1px #fff;
+	border-width: 1px 0;
+	border-style: solid;
+	border-color: transparent;
+}
+.menu ul.menu_items li.menu_item a:hover {
+	color: #fff;
+	text-shadow: 1px 1px #000;
+	text-decoration: none;
+	background-color: #333;
+	border-color: #000;
+}
+.menu ul.menu_headers li.menu_header.active,
+.menu ul.menu_headers li.menu_header.active:hover { /*--Makes sure that the active tab does not listen to the hover properties--*/
+	background-position: 0 -32px !important;
+}
+.menu.active ul.menu_headers {
+	border-bottom: 1px solid #999;
+}
+
+.menu.active {
+	z-index: 2000;
+}
+
+
+/* Dropdown Menu with Descriptions */
+.menu_large ul.menu_headers .icon {
+	float: left;
+	padding: 4px 4px 4px 0;
+}
+.menu_large ul.menu_headers {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 24px;
+	line-height: 24px;
+	text-shadow: 1px 1px #fff;
+	cursor: pointer;
+	position: relative;
+	top: 1px;
+	z-index: 2100;
+	float: right;
+}
+.menu_large ul.menu_headers .side {
+	background: url(../img/menu/dropdown_side_bg.png) no-repeat;
+	margin: 0;
+	display: block;
+	width: 32px;
+	height: 24px;
+	float: right;
+}
+.menu_large ul.menu_headers li.menu_header {
+	background: url(../img/menu/dropdown_bg.png) no-repeat;
+	margin: 1px 0 0 0;
+	padding: 0 0 0 7px;
+	float: left;
+	width: auto;
+	height: 24px;
+}
+.menu_large ul.menu_headers li.menu_header .menu_header_text {
+	display: block;
+	float: left;
+	padding: 0;
+}
+.menu_large ul.menu_headers:hover li.menu_header {
+	background-position: 0 -24px
+}
+.menu_large ul.menu_headers:hover .side {
+	background-position: 0 -24px
+}
+.menu_large ul.menu_items {
+	position: relative;
+	z-index: 2000;
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #999;
+	clear: both;
+	float: left;
+	background: #fff;
+	min-width: 100px;
+	max-width: 240px;
+	-moz-box-shadow: 0 5px 5px #aaa;
+	-webkit-box-shadow: 0 5px 5px #aaa;
+}
+.menu_large ul.menu_items li.menu_item {
+	color: #666;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 3px 0;
+	padding: 4px 15px;
+	display: block;
+	text-shadow: 1px 1px #fff;
+	border-width: 1px 0;
+	border-style: solid;
+	border-color: transparent;
+	cursor: pointer;
+}
+.menu_large ul.menu_items li.menu_item .icon {
+	float: left;
+	margin: 3px 10px 0 0;
+}
+.menu_large ul.menu_items li.menu_item .menu_item_value {
+	display: none;
+}
+.menu_large ul.menu_items li.menu_item .menu_item_text {
+}
+.menu_large ul.menu_items li.menu_item .menu_item_desc {
+	font-size: 11px;
+	padding-left: 26px;
+	display: block;
+	color: #999;
+}
+.menu_large ul.menu_items li.menu_item:hover .menu_item_desc {
+	color: #ddd;
+}
+.menu_large ul.menu_items li.menu_item:hover {
+	color: #fff;
+	text-shadow: 1px 1px #000;
+	text-decoration: none;
+	background-color: #333;
+	border-color: #000;
+}
+.menu_large.active ul.menu_headers li.menu_header .side,
+.menu_large.active ul.menu_headers li.menu_header .side:hover,
+.menu_large.active ul.menu_headers li.menu_header,
+.menu_large.active ul.menu_headers li.menu_header:hover { /*--Makes sure that the active tab does not listen to the hover properties--*/
+	background-position: 0 -48px !important;
+}
+.menu_large.active ul.menu_headers {
+	border-bottom: 1px solid #999;
+}
+
+.menu_large.active {
+	z-index: 2000;
+}
